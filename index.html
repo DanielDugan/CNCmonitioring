@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+<script src="https://apis.google.com/js/api.js"></script>
+<script>
+tablegenerate (Runtime,TotalTime,Percent);
+ 
+function tablegenerate (Runtime,TotalTime,Percent) {
+  for(i=0; i<no.length;i++)
+  {
+   var $formrow = '<tr><td>'+no[i]+'</td><td>'+names[i]+'</td><td>'+countries[i]+'</td><td>'+cname[i]+'</td></tr>';
+   $('.monthTable').append($formrow);
+  }
+}
+</script>
+</head>
+<body>
+  <div class="wrapper">
+    <h1 align='center'>CNC monitoring</h1>
+    <div class="row">
+      <div class="col-1-4">
+
+        <div class="module">
+          <h3 align=center>Shift</h3>
+          <table class="GeneratedTable">
+            <thead>
+              <tr>
+                <th>Shift</th>
+                <th>Start Time</th>
+                <th>Stop Time</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1st</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>2nd</td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="col-1-2">
+        <div class="module">
+          <h3 align='center'>Current Status</h3>
+          <table class="GeneratedTable">
+            <thead>
+              <tr>
+                <th>CNC</th>
+                <th>Status</th>
+                <th>Time</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Row 1, Cell 1</td>
+                <td>Row 1, Cell 2</td>
+                <td>Row 1, Cell 3</td>
+              </tr>
+              <tr>
+                <td>Row 2, Cell 1</td>
+                <td>Row 2, Cell 2</td>
+                <td>Row 2, Cell 3</td>
+              </tr>
+              <tr>
+                <td>Row 3, Cell 1</td>
+                <td>Row 3, Cell 2</td>
+                <td>Row 3, Cell 3</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="col-1-8">
+      </div>
+
+      <div>
+        <p><a class="button black">Refresh Screen</a></p>
+        <p><a class="button black">Weekly Report</a></p>
+        <p><a class="button black">Last Week Report</a></p>
+        <p><a class="button black">30 Day Report</a></p>
+
+      </div>
+      <div class="col-1">
+        <div class="module">
+          <h3 align='center'>Shift 1</h3>
+          <table class="GeneratedTable">
+            <thead>
+              <tr>
+                <th>Machine</th>
+                <th>Sunday</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wenesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Row 1, Cell 2</td>
+                <td>Row 1, Cell 2</td>
+                <td>Row 1, Cell 3</td>
+                <td>Row 1, Cell 1</td>
+                <td>Row 1, Cell 1</td>
+                <td>Row 1, Cell 1</td>
+                <td>Row 1, Cell 1</td>
+                <td>Row 1, Cell 1</td>
+
+              </tr>
+              <tr>
+                <td>Row 2, Cell 1</td>
+                <td>Row 2, Cell 2</td>
+                <td>Row 2, Cell 3</td>
+                <td>Row 2, Cell 3</td>
+                <td>Row 2, Cell 3</td>
+                <td>Row 2, Cell 3</td>
+                <td>Row 2, Cell 3</td>
+                <td>Row 2, Cell 3</td>
+              </tr>
+              <tr>
+                <td>Row 3, Cell 1</td>
+                <td>Row 3, Cell 2</td>
+                <td>Row 3, Cell 3</td>
+                <td>Row 3, Cell 3</td>
+                <td>Row 3, Cell 3</td>
+                <td>Row 3, Cell 3</td>
+                <td>Row 3, Cell 3</td>
+                <td>Row 2, Cell 3</td>
+              </tr>
+              <tr>
+                <td>Row 4, Cell 1</td>
+                <td>Row 4, Cell 2</td>
+                <td>Row 4, Cell 3</td>
+                <td>Row 4, Cell 3</td>
+                <td>Row 4, Cell 3</td>
+                <td>Row 4, Cell 3</td>
+                <td>Row 4, Cell 3</td>
+                <td>Row 2, Cell 3</td>
+              </tr>
+              <tr>
+                <td>Row 5</td>
+                <td>Row 5</td>
+                <td>Row 5</td>
+                <td>Row 5</td>
+                <td>Row 5</td>
+                <td>Row 5</td>
+                <td>Row 5</td>
+                <td>Row 2, Cell 3</td>
+              </tr>
+       
+              <tr>
+                <td>Row 6</td>
+                <td>Row 6</td>
+                <td>Row 6</td>
+                <td>Row 6</td>
+                <td>Row 6</td>
+                <td>Row 6</td>
+                <td>Row 6</td>
+                <td>Row 2, Cell 3</td>
+              </tr>
+              <tr>
+                <td>Row 7</td>
+                <td>Row 7</td>
+                <td>Row 7</td>
+                <td>Row 7</td>
+                <td>Row 7</td>
+                <td>Row 7</td>
+                <td>Row 7</td>
+                <td>Row 2, Cell 3</td>
+              </tr>
+              <tr>
+                <td>Row 8</td>
+                <td>Row 8</td>
+                <td>Row 8</td>
+                <td>Row 8</td>
+                <td>Row 8</td>
+                <td>Row 8</td>
+                <td>Row 8</td>
+                <td>Row 2, Cell 3</td>
+              </tr>
+              <tr>
+                <td>Row 9</td>
+                <td>Row 9</td>
+                <td>Row 9</td>
+                <td>Row 9</td>
+                <td>Row 9</td>
+                <td>Row 9</td>
+                <td>Row 9</td>
+                <td>Row 2, Cell 3</td>
+              </tr>
+              <tr>
+                <td>Row 10</td>
+                <td>Row 10</td>
+                <td>Row 9</td>
+                <td>Row 9</td>
+                <td>Row 9</td>
+                <td>Row 9</td>
+                <td>Row 9</td>
+                <td>Row 2, Cell 3</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-1">
+      <div class="module">
+        <h3 align='center'>Shift 1</h3>
+        <table class="GeneratedTable">
+          <thead>
+            <tr>
+              <th>Machine</th>
+              <th>Sunday</th>
+              <th>Monday</th>
+              <th>Tuesday</th>
+              <th>Wenesday</th>
+              <th>Thursday</th>
+              <th>Friday</th>
+              <th>Saturday</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Row 1, Cell 2</td>
+              <td>Row 1, Cell 2</td>
+              <td>Row 1, Cell 3</td>
+              <td>Row 1, Cell 1</td>
+              <td>Row 1, Cell 1</td>
+              <td>Row 1, Cell 1</td>
+              <td>Row 1, Cell 1</td>
+              <td>Row 1, Cell 1</td>
+
+            </tr>
+            <tr>
+              <td>Row 2, Cell 1</td>
+              <td>Row 2, Cell 2</td>
+              <td>Row 2, Cell 3</td>
+              <td>Row 2, Cell 3</td>
+              <td>Row 2, Cell 3</td>
+              <td>Row 2, Cell 3</td>
+              <td>Row 2, Cell 3</td>
+              <td>Row 2, Cell 3</td>
+            </tr>
+            <tr>
+              <td>Row 3, Cell 1</td>
+              <td>Row 3, Cell 2</td>
+              <td>Row 3, Cell 3</td>
+              <td>Row 3, Cell 3</td>
+              <td>Row 3, Cell 3</td>
+              <td>Row 3, Cell 3</td>
+              <td>Row 3, Cell 3</td>
+              <td>Row 2, Cell 3</td>
+            </tr>
+            <tr>
+              <td>Row 4, Cell 1</td>
+              <td>Row 4, Cell 2</td>
+              <td>Row 4, Cell 3</td>
+              <td>Row 4, Cell 3</td>
+              <td>Row 4, Cell 3</td>
+              <td>Row 4, Cell 3</td>
+              <td>Row 4, Cell 3</td>
+              <td>Row 2, Cell 3</td>
+            </tr>
+            <tr>
+              <td>Row 5</td>
+              <td>Row 5</td>
+              <td>Row 5</td>
+              <td>Row 5</td>
+              <td>Row 5</td>
+              <td>Row 5</td>
+              <td>Row 5</td>
+              <td>Row 2, Cell 3</td>
+            </tr>
+            <tr>
+              <td>Row 6</td>
+              <td>Row 6</td>
+              <td>Row 6</td>
+              <td>Row 6</td>
+              <td>Row 6</td>
+              <td>Row 6</td>
+              <td>Row 6</td>
+              <td>Row 2, Cell 3</td>
+            </tr>
+            <tr>
+              <td>Row 7</td>
+              <td>Row 7</td>
+              <td>Row 7</td>
+              <td>Row 7</td>
+              <td>Row 7</td>
+              <td>Row 7</td>
+              <td>Row 7</td>
+              <td>Row 2, Cell 3</td>
+            </tr>
+            <tr>
+              <td>Row 8</td>
+              <td>Row 8</td>
+              <td>Row 8</td>
+              <td>Row 8</td>
+              <td>Row 8</td>
+              <td>Row 8</td>
+              <td>Row 8</td>
+              <td>Row 2, Cell 3</td>
+            </tr>
+            <tr>
+              <td>Row 9</td>
+              <td>Row 9</td>
+              <td>Row 9</td>
+              <td>Row 9</td>
+              <td>Row 9</td>
+              <td>Row 9</td>
+              <td>Row 9</td>
+              <td>Row 2, Cell 3</td>
+            </tr>
+            <tr>
+              <td>Row 10</td>
+              <td>Row 10</td>
+              <td>Row 9</td>
+              <td>Row 9</td>
+              <td>Row 9</td>
+              <td>Row 9</td>
+              <td>Row 9</td>
+              <td>Row 2, Cell 3</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="col-1">
+    <div class="module">
+      <h3 align='center'>30 Day report</h3>
+      <div id='output1'>
+        <table class="monthTable">
+        <thead>
+          <tr>
+         <th>Machine</th>
+            <th width=14%>Sunday</th>
+            <th width=14%>Monday</th>
+            <th width=14%>Tuesday</th>
+            <th width=14%>Wenesday</th>
+            <th width=14%>Thursday</th>
+            <th width=14%>Friday</th>
+            <th width=14%>Saturday</th>
+ 
+          </tr>
+        </thead>
+        </table>
+    </div>
+  </div>
+
+
+
+</html>
