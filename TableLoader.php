@@ -10,9 +10,9 @@ return $HMS;
 } 
 
 $mysql_hostname = "localhost";
-$mysql_user     = "monitor";
-$mysql_password = "password";
-$mysql_database = "AHI_DB";
+$mysql_user     = "";
+$mysql_password = "";
+$mysql_database = "";
 $bd             = mysql_connect($mysql_hostname, $mysql_user, $mysql_password) or die("Oops some thing went wrong");
 mysql_select_db($mysql_database, $bd) or die("Oops some thing went wrong");// now connected to database
 $result = mysql_query("SELECT * FROM Machine_Monitor ORDER BY XBee_Index"); // selecting data through mysql_query() and sorting it by date and time
