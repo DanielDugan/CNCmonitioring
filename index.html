@@ -1,114 +1,159 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="styles.css">
+ <link rel="stylesheet" href="/styles.css">
 <script src="https://apis.google.com/js/api.js"></script>
-</head>
+<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+  
+<script type="text/javascript">
+            var a = {};
+            $.getJSON('data.json', function (data) {
+                a = data;
+                console.log(a);
+    $.each(a, function(idx, machine ){
+		var b = "Hello"
+    $('#current').append('<tr><td>'+b+'</td><td>'+machine.id +'</td><td>'+machine.id+'</td></tr>');
+    });
+    });
+
+</script>
+
+<script type="text/javascript">
+            var a = {};
+            $.getJSON('data.json', function (data) {
+                a = data;
+                console.log(a);
+    $.each(a, function(idx, machine ){
+    $('#shift1').append('<tr><td>'+a[0][1][1][0]+'</td><td>'+machine.id +'</td><td>'+machine.id+'</td></tr>'
+		+machine.id +'</td><td>'+machine.id+'</td></tr>'+machine.id +'</td><td>'+machine.id+'</td></tr>');
+    });
+    });
+
+</script>
+         
+<script type="text/javascript">
+            var a = {};
+            $.getJSON('data.json', function (data) {
+                a = data;
+                console.log(a);
+    $.each(a, function(idx, machine ){
+    $('#shift2').append('<tr><td>'+machine.id+'</td><td>'+machine.id +'</td><td>'+machine.id+'</td></tr>'
+		+machine.id +'</td><td>'+machine.id+'</td></tr>'+machine.id +'</td><td>'+machine.id+'</td></tr>');
+    });
+    });
+
+</script>
 
 <body>
   <div class="wrapper">
-    <h1 align='center'>CNC monitoring</h1>
+    <h1 align = 'center'>CNC monitoring</h1>
     <div class="row">
       <div class="col-1-4">
 
-        <div class="module">
-          <h3 align=center>Shift</h3>
-          <table class="GeneratedTable">
-            <thead>
-              <tr>
-                <th>Shift</th>
-                <th>Start Time</th>
-                <th>Stop Time</th>
-              </tr>
-            </thead>
-            <tbody>
-           
-            </tbody>
-          </table>
-        </div>
+       <div class="module">
+       <h3 align=center>Shift</h3>
+				<table class="GeneratedTable">
+  <thead>
+    <tr>
+      <th>Shift</th>
+      <th>Start Time</th>
+      <th>Stop Time</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1st</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2nd</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>	
+    </div>
       </div>
       <div class="col-1-2">
         <div class="module">
-          <h3 align='center'>Current Status</h3>
-          <table class="GeneratedTable">
-            <thead>
-              <tr>
-                <th>CNC</th>
-                <th>Status</th>
-                <th>Time</th>
-              </tr>
+                     <h3 align='center'>Current Status</h3>      
+   <table class="GeneratedTable">
+  <thead>
+    <tr>
+      <th>CNC</th>
+      <th>Status</th>
+      <th>Time</th>
+    </tr>
+  </thead>
+  <tbody id="current">
 
-      <div class="col-1-8">
-      </div>
-
-      <div>
-        <p><a class="button black">Refresh Screen</a></p>
-        <p><a class="button black">Weekly Report</a></p>
-        <p><a class="button black">Last Week Report</a></p>
-        <p><a class="button black">30 Day Report</a></p>
-
-      </div>
-      <div class="col-1">
-        <div class="module">
-          <h3 align='center'>Shift 1</h3>
-          <table class="GeneratedTable">
-            <thead>
-              <tr>
-                <th>Machine</th>
-                <th>Sunday</th>
-                <th>Monday</th>
-                <th>Tuesday</th>
-                <th>Wenesday</th>
-                <th>Thursday</th>
-                <th>Friday</th>
-                <th>Saturday</th>
-              </tr>
-            </thead>
-          </table>
+  </tbody>
+     </table>
         </div>
       </div>
+     
+        
+ <div class="col-1-8">
+          <p><button type="button">Refresh Screen</button></p>
+          <p><button type="button">Weekly Report</button></p>   
+          <p><button type="button">Last Week Report</button></p>
+          <p><button type="button">30 Day Report</button></p> 
+          
+</div>
+    <div class="col-1">
+        <div class="module">
+                     <h3 align='center'>Shift 1</h3>      
+   <table class="GeneratedTable">
+  <thead>
+    <tr>
+      <th>Machine</th>
+      <th>Sunday</th>
+      <th>Monday</th>
+      <th>Tuesday</th>
+      <th>Wednesday</th>
+      <th>Thursday</th>
+      <th>Friday</th>
+      <th>Saturday</th>
+    </tr>
+  </thead>
+  <tbody id="shift1">
+  </tbody>
+     </table>
+        </div>
+      </div> 
+</div>
 
     <div class="col-1">
-      <div class="module">
-        <h3 align='center'>Shift 1</h3>
-        <table class="GeneratedTable">
-          <thead>
-            <tr>
-              <th>Machine</th>
-              <th>Sunday</th>
-              <th>Monday</th>
-              <th>Tuesday</th>
-              <th>Wednesday</th>
-              <th>Thursday</th>
-              <th>Friday</th>
-              <th>Saturday</th>
-            </tr>
-          </thead>
-        </table>
-      </div>
-    </div>
-  <div class="col-1">
-    <div class="module">
-      <h3 align='center'>30 Day report</h3>
-      <div id='output1'>
-         <table class="GeneratedTable">
-        <thead>
-          <tr>
-         <tr>
-              <th>Machine</th>
-              <th>Sunday</th>
-              <th>Monday</th>
-              <th>Tuesday</th>
-              <th>Wednesday</th>
-              <th>Thursday</th>
-              <th>Friday</th>
-              <th>Saturday</th>
-            </tr>
-        </thead>
-        </table>
-    </div>
-  </div>
-
-
-
+        <div class="module">
+                     <h3 align='center'>Shift 2</h3>      
+   <table class="GeneratedTable">
+  <thead>
+    <tr>
+      <th>Machine</th>
+      <th>Sunday</th>
+      <th>Monday</th>
+      <th>Tuesday</th>
+      <th>Wednesday</th>
+      <th>Thursday</th>
+      <th>Friday</th>
+      <th>Saturday</th>
+    </tr>
+  </thead>
+  <tbody id="shift2">
+  </tbody>
+     </table>
+        </div>
+      </div> 
+</div>
+         
+     </table>
+       <div id='output1'></div>
+        </div>
+      </div> 
+</div>
+</body>
 </html>
